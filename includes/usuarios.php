@@ -4,7 +4,7 @@
 if (@$_GET['item'] == 'deletar' ) {  
 	 
 		$id 		= $_GET['id'];
-		$queryDel 	= $conex->prepare('DELETE FROM usuarios WHERE id = ?');
+		$queryDel 	= $conex->prepare('DELETE FROM usuario WHERE id = ?');
 		$queryDel->bindValue(1, $id, PDO::PARAM_STR);
 		if($queryDel->execute()){
 			echo '<div class="alert alert-success" role="alert">

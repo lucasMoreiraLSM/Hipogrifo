@@ -1,0 +1,105 @@
+/* nas duas */
+
+body {
+    background: linear-gradient( 242.2deg, #d1ddea 11.84%, #a2a3a5 47.62%, #697279 88.16%);
+    height: 100vh;
+}
+
+h1,
+a,
+button,
+label {
+    font-family: PT Mono;
+    color: #05346b;
+}
+
+
+/* nas duas */
+
+.centralizar {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row.no-gutter [class*="col-"]:not(:first-child),
+.row.no-gutter [class*="col-"]:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#card-logo {
+    /* height: 95.5%; */
+    background: #0a1635;
+    border-radius: 67px 0px 0px 67px;
+}
+
+#card-login {
+    background: #0a1635;
+    border-radius: 0px 67px 67px 0px;
+    padding-left: 0px;
+}
+
+#logo-img {
+    margin-top: -9px;
+}
+
+#botao-sinza {
+    border: none;
+    /* fonte */
+    font-family: Reem Kufi;
+    font-size: 22px;
+    /* identical to box height */
+    color: #05346b;
+    /* dimencao */
+    background: linear-gradient( 180deg, rgba(255, 248, 248, 0.75) 99.99%, #3b70a2 100%);
+    border-radius: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#botao-azul {
+    border: none;
+    /* fonte */
+    font-family: Reem Kufi;
+    font-size: 22px;
+    /* identical to box height */
+    color: #fff8f8;
+    /* dimencao */
+    background: linear-gradient(180deg, #05346b 0%, #3b70a2 100%);
+    border-radius: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#container-butao {
+    text-align: center;
+}
+
+#texto {
+    font-family: Reem Kufi;
+    font-size: 36px;
+    line-height: 54px;
+    align-items: center;
+    text-align: center;
+    color: #c4c4c4;
+}
+
+#login-text {
+    font-family: PT Mono;
+    font-size: 60px;
+    color: #05346b;
+}
+
+#esqueceu-a-senha {
+    font-family: Reem Kufi;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #1542e1;
+}

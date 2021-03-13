@@ -17,31 +17,28 @@ $conex = conectar();
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/login.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
     <title>Hipogrifo</title>
-    <style>
-      body{
-        background: #697279
-      }
-      .bg-azul{
-        background: #0a1635;
-      }
-    </style>
+  
   </head>
   <body>
     
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4   text-light"> 
-               <div class="bg-azul text-center mt-4 p-4 rounded-start">
+    <div class="container centralizar">
+      <div class="row justify-content-center no-gutter">
+        <div  class="col-md-6   text-light"> 
+               <div id="card-logo" style="height: 95.5%;" class="text-center mt-4 p-4">
                
-               <img src="img/hipogrifo_logo.svg" alt="logo" />
-                <p class="h4 fw-bold py-4">
+               <img id="logo-img" src="img/hipogrifo_logo.svg" class="img-fluid" alt="logo" />
+                <p id="texto" class="py-4">
                     Entre com suas informações pessoais, para começar sua jornada conosco !
                 </p>
-       
-                    <a href="cadastro.php"  class="btn btn-light btn-lg">Cadastrar</a>
+                  <div class="contaoner-azul">
+                    
+                  </div>
+                    <a id="botao-sinza" href="cadastro.php" style="margin-top:16px;"  class="btn btn-light btn-lg">Cadastrar</a>
                  </div>
 
 
@@ -50,10 +47,10 @@ $conex = conectar();
         </div>
         <div class="col-md-6">
         
-        <div class="bg-light  mt-4 p-4 rounded-end">
+        <div id="card-login" class="bg-light  mt-4 p-4">
                
               
-         <h1 class="text-center">Entrar</h1>    
+         <h1 id="login-text" class="text-center">Login</h1>    
 
 
 <?php 	
@@ -119,11 +116,18 @@ Usuário Salvo com sucesso.
     <label for="senha" class="form-label">Senha</label>
     <input type="password" name="senha" class="form-control" id="senha">
   </div>
+  <div class="mb-3 form-check" style="text-align: end;">
+   <a id="esqueceu-a-senha">Esqueceu a senha?</a>
+  </div>
+ 
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Manter logado</label>
   </div>
-  <button type="submit" class="btn btn-primary">Acessar</button>
+<div id="container-butao">
+<button id="botao-azul" type="submit" class="btn btn-primary">Acessar</button>
+</div>
+  
 </form>
  
 
@@ -137,7 +141,7 @@ Usuário Salvo com sucesso.
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="js/bootstrap.bundle.min.js""></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js""></script>
       <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {

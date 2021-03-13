@@ -17,43 +17,39 @@ $conex = conectar();
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet" >
     <title>Hipogrifo</title>
-    <style>
-      body{
-        background: #697279
-      }
-      .bg-azul{
-        background: #0a1635;
-      }
-    </style>
   </head>
   <body>
-    
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4   text-light"> 
-               <div class="bg-azul text-center mt-4 p-4 rounded-start">
+    <script>
+    // atualizar a pagina acada 1/2 segundo
+    // setInterval(function(){location.reload(true);}, 500);
+    </script>
+    <div class="container centralizar">
+      <div  class="row justify-content-center">
+        <div  id="card-logo" class="col-md-6   text-light"> 
+               <div class="bg-azul text-center  p-4 rounded-start">
                
-               <img src="img/hipogrifo_logo.svg" alt="logo" />
-                <p class="h4 fw-bold py-4">
-                    Entre com suas informações pessoais, para começar sua jornada conosco !
+               <img id="logo-img" src="img/hipogrifo_logo.svg" class="img-fluid" alt="logo" />
+                <p id="texto"  class="py-4">
+                Para se manter conectado <br/> realize o login com <br/>suas informações pessoais 
                 </p>
-                <a href="cadastro.php">
-                    <a href="login.php"  class="btn btn-light btn-lg">Login</a>
-                </a></div>
+               
+                    <a  id="botao-sinza" href="login.php" style="margin-top: 33px;" class="btn btn-light btn-lg">Login</a>
+                </div>
 
 
 
         
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="padding: 0px;">
         
-        <div class="bg-light  mt-4 p-4 rounded-end">
+        <div id="card-login"  class="bg-light  p-4">
                
               
-         <h1 class="text-center">Cadastro</h1>    
+         <h1 id ="login-text"  class="text-center">Cadastro</h1>    
 
 
 <?php 	
@@ -135,8 +131,8 @@ $conex = conectar();
 
  
   <div class="col-12 text-center">
-  <div class="d-grid gap-2">
-    <button class="btn btn-primary bnt-lg" type="submit"> <i class="fas fa-save"></i> Salvar</button>
+  <div >
+    <button id="botao-azul" style="margin-top:0px" class="btn btn-primary bnt-lg" type="submit">Salvar</button>
   </div>
   </div>
 </form>
@@ -155,8 +151,8 @@ $conex = conectar();
   crossorigin="anonymous"></script>
   
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.mask.js"></script> 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/jquery.mask.js"></script> 
 
       <script>
 

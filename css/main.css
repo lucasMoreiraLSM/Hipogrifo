@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient( 242.2deg, #d1ddea 11.84%, #a2a3a5 47.62%, #697279 88.16%);
+    height: 100vh;
+}
+
+h1,
+a,
+button,
+label {
+    font-family: Reem Kufi;
+    color: #05346b;
+}

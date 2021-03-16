@@ -6,11 +6,13 @@ body {
 }
 
 h1,
-a,
 button,
-label {
-    font-family: PT Mono;
-    color: #05346b;
+b,
+th,
+td,
+a,
+p {
+    font-family: Reem Kufi;
 }
 
 

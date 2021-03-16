@@ -15,39 +15,40 @@ if (@$_GET['item'] == 'deletar' ) {
 				
  }
 
-?> 
+?>
 
 <?php   if ($_GET['pag'] == 'usuarios' && @$_GET['item'] == 'editar' ) { ?>
 
 <div class="content">
-		
-		<div class="container-fluid">
-			     <div class="row justify-content-end">
-                    <div class="col-md-12 text-end">
-                       
-                       <a href="index.php?pag=usuarios" >
-                       <button class="btn btn-primary btn-fill pull-right">
-                       <b><i class="fa fa-angle-left" aria-hidden="true"></i> VOLTAR PARA USUÁRIOS</b>
-                       </button>
 
-                       </a>
-                 
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-md-12 text-end">
 
+                <a href="index.php?pag=usuarios">
+                    <button class="btn btn-primary btn-fill pull-right">
+                        <b><i class="fa fa-angle-left" aria-hidden="true"></i> VOLTAR PARA USUÁRIOS</b>
+                    </button>
+
+                </a>
 
 
-					</div>
-                  </div>
-                   <br>
-				 <div class="row">
-            		<div class="col-md-12">
-                	 
-                            
-                      
-						<h4 class="title"><b>EDITAR USUÁRIO</b></h4><hr />
-                          
-							 
 
-						<?php 	
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+
+
+
+                <h4 class="title"><b>EDITAR USUÁRIO</b></h4>
+                <hr />
+
+
+
+                <?php 	
 						 
 						$id = $_GET['id'];
 
@@ -110,69 +111,70 @@ if (@$_GET['item'] == 'deletar' ) {
 
 
 						?>
-						 
-<form class="row g-3 needs-validation" novalidate  method="post" >
-  <div class="col-md-12">
-    <label for="nome" class="form-label">Nome Completo</label>
-    <input type="text" name="nome" class="form-control" id="nome" value="<? echo $nome ?>" required>
-  
-  </div>
-  <div class="col-md-12">
-    <label for="cpf" class="form-label">*CPF</label>
-    <input type="text" class="form-control" id="cpf" name="cpf" value="<? echo $cpf ?>" required>
- 
-  </div>
-   
-  <div class="col-md-12">
-    <label for="email" class="form-label">*Email</label>
-    <input type="email" name="email" class="form-control" id="email" value="<? echo $email ?>" required readonly>
- 
-  </div>
-  
- 
 
-  <div class="col-md-12">
-    <label for="tipo" class="form-label">Tipo</label>
-    <select class="form-select" name="tipo" id="tipo" required>
-      <option value="">Selecione...</option>
-      <option value="1" <? if($tipo == 1) { echo 'selected'; } ?> >Administrador</option>
-      <option value="2" <? if($tipo == 2) { echo 'selected'; } ?> >Aluno</option>
-      <option value="3" <? if($tipo == 3) { echo 'selected'; } ?> >Professor</option>
-    </select>
-     
-  </div>
-						
-					 
- 
-						
-						
- 
-			 
+                <form class="row g-3 needs-validation" novalidate method="post">
+                    <div class="col-md-12">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" name="nome" class="form-control" id="nome" value="<? echo $nome ?>" required>
 
+                    </div>
+                    <div class="col-md-12">
+                        <label for="cpf" class="form-label">*CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" value="<? echo $cpf ?>" required>
 
-			 
-				<div class="col-md-9 mt-4">
-				  <input type="submit" class="btn btn-primary btn-fill " name="atl"  value="ATUALIZAR">
+                    </div>
 
-				  <a href="?pag=usuario" class="btn btn-info btn-fill"> CANCELAR </a>  
-				</div>
-				 
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">*Email</label>
+                        <input type="email" name="email" class="form-control" id="email" value="<? echo $email ?>"
+                            required readonly>
+
+                    </div>
 
 
 
-					</form>
+                    <div class="col-md-12">
+                        <label for="tipo" class="form-label">Tipo</label>
+                        <select class="form-select" name="tipo" id="tipo" required>
+                            <option value="">Selecione...</option>
+                            <option value="1" <? if($tipo==1) { echo 'selected' ; } ?> >Administrador</option>
+                            <option value="2" <? if($tipo==2) { echo 'selected' ; } ?> >Aluno</option>
+                            <option value="3" <? if($tipo==3) { echo 'selected' ; } ?> >Professor</option>
+                        </select>
+
+                    </div>
 
 
 
 
-							</div>
-						</div>
-					</div>
-		
-				</div>
-		</div>	
-		
-		
+
+
+
+
+
+
+                    <div class="col-md-9 mt-4">
+                        <input type="submit" class="btn btn-primary btn-fill " name="atl" value="ATUALIZAR">
+
+                        <a href="?pag=usuario" class="btn btn-info btn-fill"> CANCELAR </a>
+                    </div>
+
+
+
+
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
 </div>
 
 
@@ -225,149 +227,154 @@ if (@$_GET['item'] == 'deletar' ) {
 			}	// send post
 			
 				  
-		?>	
-		
-		
+		?>
+
+
 
 <div class="content">
-			<div class="container-fluid">
-			<div class="row justify-content-end">
-				
-				<div class="col-md-12 text-end">
-					</div>
-  						<div class="col-md-6 text-right">
-							
-							<a href="index.php?pag=usuarios">
-								
-						<button class="btn btn-primary btn-fill pull-right">   <b><i class="fa fa-angle-left" aria-hidden="true"></i> VOLTAR PARA USUÁRIOS</b>
-                       </button>
-							</a>	 
+    <div class="container-fluid">
+        <div class="row justify-content-end">
 
-						</div>	
-					</div>
-			<br>
-				<div class="row justify-content-center">
-					 
-					<div class="col-md-6">
+            <div class="col-md-12 text-end">
+            </div>
+            <div class="col-md-6 text-right">
 
- 
-                  
-<h1><b>EDITAR SENHA</b></h1><hr />
-                    
+                <a href="index.php?pag=usuarios">
+
+                    <button class="btn btn-primary btn-fill pull-right"> <b><i class="fa fa-angle-left"
+                                aria-hidden="true"></i> VOLTAR PARA USUÁRIOS</b>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
 
 
 
+                <h1><b>EDITAR SENHA</b></h1>
+                <hr />
 
-						 
-<form class="row g-3 needs-validation" novalidate  method="post" >          
-                                        	    
+
+
+
+
+
+                <form class="row g-3 needs-validation" novalidate method="post">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nome:</label>
+                                <input type="text" class="form-control" placeholder="..." name="nome"
+                                    value="<? echo $nome_edi?>" required="" aria-required="true" disabled>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Senha:</label>
+                                <input type="password" id="password" class="form-control" placeholder="..."
+                                    name="senha_pri" required="" aria-required="true">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+
+
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>confirmar a senha:</label>
+                                <input type="password" class="form-control" placeholder="..." name="senha_seg">
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-md-12 mt-4 ">
+                            <input type="submit" class="btn btn-primary btn-fill " name="atl" value="ATUALIZAR">
+
+                            <a href="?pag=usuarios" class="btn btn-info btn-fill"> CANCELAR </a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<?php } else if ($_GET['pag'] == 'usuarios') { ?>
+
+
+
 <div class="row">
+    <div class="col-md-12">
 
-	<div class="col-md-12">
-		<div class="form-group">
-			<label>Nome:</label>
-			<input type="text" class="form-control" placeholder="..." name="nome" value="<? echo $nome_edi?>" required="" aria-required="true" disabled  >
 
-		</div>
-	</div>
+        <h1 class="texto-centralizado"><b>Lista de Usuários</b></h1>
+        <hr />
 
-</div>
- 
- 		
-<div class="row">
-	
-	
-	
-	
-<div class="col-md-12">
-	<div class="form-group">
-		<label>Senha:</label>
-		<input type="password" id="password" class="form-control" placeholder="..." name="senha_pri" required="" aria-required="true"  >
-		 
-	</div>
-</div>
-	
-	
-	</div>		
- 		
- <div class="row">
-	
-	
-	
-	
-<div class="col-md-12">
-	<div class="form-group">
-		<label>confirmar a senha:</label>
-		<input type="password" class="form-control" placeholder="..." name="senha_seg" >
-		 
-	</div>
-</div>
-	
-	
 
-  
-                              
-<div class="col-md-12 mt-4 ">
-<input type="submit" class="btn btn-primary btn-fill " name="atl" value="ATUALIZAR">
+        <? if(@$_GET['salvo'] == "ok" ) { ?>
+        <div class="alert alert-success" role="alert">
+            Usuário Salvo com sucesso.
+        </div>
+        <? } ?>
 
-<a href="?pag=usuarios" class="btn btn-info btn-fill"> CANCELAR </a>  
-</div>
 
-</div>	
-	
-	                                               
-                                                             
-                                                                               
-                                 
-                                    
-                                    
-								
-                                    
-                                    
-	</form>       
-                
-             
 
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div> 
 
-<?php } else if ($_GET['pag'] == 'usuarios') { ?>   
-	 
- 
-		 
-					<div class="row">
-            		<div class="col-md-12">
-             
-                  
-					<h1><b>USUÁRIOS</b></h1><hr />
-                    
 
-<? if(@$_GET['salvo'] == "ok" ) { ?>
-<div class="alert alert-success" role="alert">
-Usuário Salvo com sucesso.
-</div>
-<? } ?>
+        <table class="table">
 
-	 
-         
-   
-                       
-			  <table class="table">
-         
-              <thead>
+            <thead>
                 <tr>
-                  <th>ID</th>
-				  <th>Nome</th>
-				  <th>Usuário</th>
-				  <th>Nivel de acesso</th> 
-				  <th>Ações</th>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Usuário</th>
+                    <th>Nivel de acesso</th>
+                    <th>Ações</th>
                 </tr>
-              </thead>
+            </thead>
 
-<?php  
+            <?php  
 		$query = $conex->prepare("SELECT * FROM  usuario   ORDER BY id DESC");
 		$query ->execute();
 		while($listar = $query->fetch(PDO::FETCH_ASSOC)){  
@@ -389,50 +396,53 @@ Usuário Salvo com sucesso.
 		$tipo_user1 = "Professor";
 	}	
  
-?>                       
+?>
 
-		<tbody>
-			<tr>
-				<td><?php echo $id ?></td>
-				<td><?php echo $nome ?></td>
-				<td><?php echo $email ?></td>
-				<td><?php echo $tipo_user1 ?></td> 
-				<td>
-             
-                    
-                
-                                                 
-							<a href="index.php?pag=usuarios&item=senha&id=<?php echo $id ?>" title="Editar Senha" class="btn btn-primary ">  <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-								</a> 
+            <tbody>
+                <tr>
+                    <td><?php echo $id ?></td>
+                    <td><?php echo $nome ?></td>
+                    <td><?php echo $email ?></td>
+                    <td><?php echo $tipo_user1 ?></td>
+                    <td>
 
 
-						 <a href="index.php?pag=usuarios&item=editar&id=<?php echo $id ?>" title="Editar Senha" class="btn btn-primary ">  <i class="fa fa-edit" aria-hidden="true"></i>
-						 </a> 
 
 
-		 				
-				 
-						  <a href="index.php?pag=usuarios&item=deletar&id=<?php echo $id ?>"  class="btn btn-warning " onclick="return confirm('Tem certeza que deseja apagar?')">
-						  <i class="fas fa-trash-alt"></i>
-						  </a>
-					 
-                                       
-                    
-                    
-				</td>
-			</tr>
-		<?php	}  ?>        
-		</tbody>
-</table>
- 
- 	 
-         
-   
-    
-        	</div>
- 
-    	</div> 	
-        
- 
-    
+                        <a href="index.php?pag=usuarios&item=senha&id=<?php echo $id ?>" title="Editar Senha"
+                            class="btn btn-primary "> <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </a>
+
+
+                        <a href="index.php?pag=usuarios&item=editar&id=<?php echo $id ?>" title="Editar Senha"
+                            class="btn btn-primary "> <i class="fa fa-edit" aria-hidden="true"></i>
+                        </a>
+
+
+
+
+                        <a href="index.php?pag=usuarios&item=deletar&id=<?php echo $id ?>" class="btn btn-warning "
+                            onclick="return confirm('Tem certeza que deseja apagar?')">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+
+
+
+
+                    </td>
+                </tr>
+                <?php	}  ?>
+            </tbody>
+        </table>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
 <?php } ?>

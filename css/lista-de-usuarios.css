@@ -1,0 +1,19 @@
+h1,
+button,
+b,
+th,
+td,
+a,
+p {
+    font-family: Reem Kufi;
+}
+
+.texto-centralizado {
+    text-align: center;
+    /*  */
+    font-size: 64px;
+    line-height: 96px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
